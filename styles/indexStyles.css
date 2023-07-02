@@ -1,0 +1,17 @@
+
+body{
+    background-color: #121212;
+    color: #FFFFFF;
+    text-align: center;
+}
+h1{
+    color: #1ED760;
+}
+#login{
+    font-size: 22px;
+    background-color: #1ED760;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 40px;
+    padding: 20px;
+}
