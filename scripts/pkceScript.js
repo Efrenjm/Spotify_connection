@@ -25,7 +25,7 @@ async function generateCodeChallenge(codeVerifier) {
   // Spotify App Public Key
 const clientId = '8aeeac79eb604c54a9d9dd4660deff34';
 
-const redirectUri = 'http://localhost:5500/pages/decision.html';
+const redirectUri = 'https://efrenjm.github.io/Spotify_connection/pages/decision.html';
 
 let button = document.getElementById("login");
 button.addEventListener("click",()=>{
@@ -49,24 +49,3 @@ button.addEventListener("click",()=>{
         window.location = 'https://accounts.spotify.com/authorize?' + args;
     })
 })
-
-
-
-
-
-
-
-
-
-
-//   async function getProfile(accessToken) {
-//     let accessToken = localStorage.getItem('access_token');
-  
-//     const response = await fetch('https://api.spotify.com/v1/me', {
-//       headers: {
-//         Authorization: 'Bearer ' + accessToken
-//       }
-//     });
-  
-//     const data = await response.json();
-//   }

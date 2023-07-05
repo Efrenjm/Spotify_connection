@@ -2,11 +2,11 @@ const urlParams = new URLSearchParams(window.location.search);
 
 let err = urlParams.get('error');
 if(err){
-    window.location = 'http://localhost:5500/pages/accessDenied.html';
+    window.location = 'https://efrenjm.github.io/Spotify_connection/pages/accessDenied.html';
 }else{
 
     const clientId = '8aeeac79eb604c54a9d9dd4660deff34';
-    const redirect_uri = 'http://localhost:5500/pages/decision.html';
+    const redirect_uri = 'https://efrenjm.github.io/Spotify_connection/pages/decision.html';
     
     let code = urlParams.get('code');
     let codeVerifier = localStorage.getItem('code_verifier');
@@ -34,7 +34,7 @@ if(err){
     })
     .then(data => {
         localStorage.setItem('access_token', data.access_token);
-        window.location = 'http://localhost:5500/pages/listen.html';
+        window.location = 'https://efrenjm.github.io/Spotify_connection/pages/listen.html';
     })
     .catch(error => {
         console.error('Error: ', error);
