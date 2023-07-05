@@ -24,8 +24,8 @@ async function generateCodeChallenge(codeVerifier) {
 }
   // Spotify App Public Key
 const clientId = '8aeeac79eb604c54a9d9dd4660deff34';
-
-const redirectUri = 'https://efrenjm.github.io/Spotify_connection/pages/decision.html';
+const localhost = 'http://localhost:5500/'
+const redirectUri = localhost + 'pages/decision.html';
 
 let button = document.getElementById("login");
 button.addEventListener("click",()=>{
